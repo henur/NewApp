@@ -3,16 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CoinpriceComponent } from './coinprice/coinprice.component';
+import { CoinpriceService } from './coinprice/coinprice.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CoinpriceComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    CoinpriceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
